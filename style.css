@@ -1,0 +1,420 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #DD0000, #0000AA);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo i {
+    font-size: 2rem;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.logo span {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #FF8C00;
+}
+
+/* Header Buttons */
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.welcome-text {
+    margin-right: 10px;
+    color: white;
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    background: #FF8C00;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #FF6B00;
+}
+
+/* Hero Section */
+.hero {
+    background: url('patan.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+    opacity: 0.6;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+/* Section Title */
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #0000AA;
+}
+
+.section-title h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.section-title p {
+    color: #333;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background: #f5f5f5;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card i {
+    font-size: 3rem;
+    color: #0000AA;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    margin-bottom: 1rem;
+    color: #DD0000;
+}
+
+/* Complaint Form Section */
+.complaint-form {
+    padding: 6rem 0;
+    background: linear-gradient(to bottom, #f9f9f9, #ececec);
+}
+
+/* Alert Messages */
+.alert {
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.alert-success {
+    background: #d4edda;
+    color: #155724;
+    border-left: 4px solid #28a745;
+}
+
+.alert-danger {
+    background: #f8d7da;
+    color: #721c24;
+    border-left: 4px solid #dc3545;
+}
+
+.tracking-code {
+    font-family: monospace;
+    font-size: 1.2em;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Form Note */
+.form-note {
+    background: #e3f2fd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-left: 4px solid #0000AA;
+    font-size: 0.9em;
+}
+
+.form-note i {
+    color: #0000AA;
+    margin-right: 8px;
+}
+
+/* Form Container */
+.form-container {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Form Row */
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+/* File Input */
+.form-group small {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+}
+
+/* Submit Button */
+.btn {
+    display: inline-block;
+    background: #FF8C00;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn:hover {
+    background: #FF6B00;
+}
+
+/* Map Section */
+.map-section {
+    padding: 4rem 0;
+    background: white;
+}
+
+.map-container {
+    height: 400px;
+    background: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.map-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #ddd;
+}
+
+.map-placeholder i {
+    font-size: 50px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #0000AA, #DD0000);
+    color: white;
+    padding: 3rem 0 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.footer-section p, .footer-section a {
+    margin-bottom: 0.8rem;
+    display: block;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: white;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.social-icons a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Small Button */
+.small-btn {
+    padding: 8px 15px;
+    font-size: 0.9em;
+}
+
+/* Login Link */
+.login-link {
+    color: #0000AA;
+    font-weight: 600;
+}
+
+/* For Small Screens */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+}
