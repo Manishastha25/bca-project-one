@@ -396,7 +396,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['quick_complaint'])) {
         }
         
         th {
-            background: linear-gradient(to right, darkblue, red);
+            background:darkblue;
             color: white;
             padding: 15px;
             text-align: left;

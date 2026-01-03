@@ -106,7 +106,7 @@ $is_logged_in = isset($_SESSION['user_id']);
                     <i class="fas fa-landmark"></i>
                     <div>
                         <h1>नगरपालिका</h1>
-                        <span>Lalitpur Complaint System</span>
+                        <span>Lalitpur Municipality Complaint System</span>
                     </div>
                 </div>
                    <nav>

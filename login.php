@@ -113,12 +113,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         <!-- Login Form -->
         <div id="login" class="tab-content active">
-            <form method="POST" action="">
-                <div class="form-group">
-                    <label class="form-label">Email Address</label>
+    <form method="POST" action="">
+    <div class="form-group">
+ <label class="form-label">Email Address</label>
                     <input type="email" name="email" class="form-input" required 
-                           placeholder="Enter your email">
-                </div>
+                           placeholder="Enter your email"></div>
 
                 <div class="form-group">
                     <label class="form-label">Password</label>
